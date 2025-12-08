@@ -4,7 +4,9 @@ Code accompanying the paper https://arxiv.org/abs/2511.07438
 
 
 ## Installation
-Run the following commands
+1. Download the files of this repository
+   
+2. Run the following commands
 ```bash
 #create conda environment
 conda create --name modm python=3.9 pip
@@ -15,20 +17,20 @@ pip install aspire  fle-2d sympy cvxpy
 pip3 install "cvxpy[GUROBI]"
 ```
 
-Install fle_3d by following the instructions at https://github.com/oscarmickelin/fle_3d
+3. Install fle_3d by following the instructions at https://github.com/oscarmickelin/fle_3d
 
-Install BOTalign by following the instructions at https://github.com/RuiyiYang/BOTalign/
+4. Install BOTalign by following the instructions at https://github.com/RuiyiYang/BOTalign/
 
-Install fast-cryoEM-PCA by following the instructions at https://github.com/yunpeng-shi/fast-cryoEM-PCA
+5. Install fast-cryoEM-PCA by following the instructions at https://github.com/yunpeng-shi/fast-cryoEM-PCA
 
-Install (including obtaining a license file) gurobi using the instructions at https://support.gurobi.com/hc/en-us/articles/360044290292-How-do-I-install-Gurobi-for-Python
+6. Install (including obtaining a license file) gurobi using the instructions at https://support.gurobi.com/hc/en-us/articles/360044290292-How-do-I-install-Gurobi-for-Python
 
-Download the files:
+7. Download the files:
 
-https://github.com/nmarshallf/fle_2d/blob/main/src/fle_2d/jn_zeros_n%3D3000_nt%3D2500.mat
+>https://github.com/nmarshallf/fle_2d/blob/main/src/fle_2d/jn_zeros_n%3D3000_nt%3D2500.mat
 
-https://github.com/oscarmickelin/fle_3d/blob/main/jl_zeros_l%3D3000_k%3D2500.mat
+>https://github.com/oscarmickelin/fle_3d/blob/main/jl_zeros_l%3D3000_k%3D2500.mat
 
-https://github.com/oscarmickelin/fle_3d/blob/main/cs_l%3D3000_k%3D2500.mat
+>https://github.com/oscarmickelin/fle_3d/blob/main/cs_l%3D3000_k%3D2500.mat
 
-and put them in the same folder as fast-cryoEM-PCA
+and put them in the same folder as the files downloaded from this repository
