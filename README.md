@@ -13,7 +13,7 @@ conda create --name modm python=3.9 pip
 conda activate modm
 
 #Install dependencies
-pip install aspire sympy cvxpy
+pip install aspire==0.13.1 sympy cvxpy
 pip3 install "cvxpy[GUROBI]"
 ```
 3. Install fle_2d by following the instructions at https://github.com/nmarshallf/fle_2d/tree/main
