@@ -13,19 +13,20 @@ conda create --name modm python=3.9 pip
 conda activate modm
 
 #Install dependencies
-pip install aspire  fle-2d sympy cvxpy
+pip install aspire sympy cvxpy
 pip3 install "cvxpy[GUROBI]"
 ```
+3. Install fle_2d by following the instructions at https://github.com/nmarshallf/fle_2d/tree/main
 
-3. Install fle_3d by following the instructions at https://github.com/oscarmickelin/fle_3d
+4. Install fle_3d by following the instructions at https://github.com/oscarmickelin/fle_3d
 
-4. Install BOTalign by following the instructions at https://github.com/RuiyiYang/BOTalign/
+5. Install BOTalign by following the instructions at https://github.com/RuiyiYang/BOTalign/
 
-5. Install fast-cryoEM-PCA by following the instructions at https://github.com/yunpeng-shi/fast-cryoEM-PCA
+6. Install fast-cryoEM-PCA by following the instructions at https://github.com/yunpeng-shi/fast-cryoEM-PCA
 
-6. Install (including obtaining a license file) gurobi using the instructions at https://support.gurobi.com/hc/en-us/articles/360044290292-How-do-I-install-Gurobi-for-Python
+7. Install (including obtaining a license file) gurobi using the instructions at https://support.gurobi.com/hc/en-us/articles/360044290292-How-do-I-install-Gurobi-for-Python
 
-7. Download the files:
+8. Download the files:
 
 >https://github.com/nmarshallf/fle_2d/blob/main/src/fle_2d/jn_zeros_n%3D3000_nt%3D2500.mat
 
