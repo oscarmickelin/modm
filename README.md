@@ -14,7 +14,6 @@ conda activate modm
 pip install aspire  fle-2d sympy cvxpy
 pip3 install "cvxpy[GUROBI]"
 ```
-#"numpy<2" scipy finufft torch==1.12.0 torch_harmonics==0.6.3
 
 Install fle_3d by following the instructions at https://github.com/oscarmickelin/fle_3d
 
@@ -29,4 +28,7 @@ Download the files:
 https://github.com/nmarshallf/fle_2d/blob/main/src/fle_2d/jn_zeros_n%3D3000_nt%3D2500.mat
 
 https://github.com/oscarmickelin/fle_3d/blob/main/jl_zeros_l%3D3000_k%3D2500.mat
+
+https://github.com/oscarmickelin/fle_3d/blob/main/cs_l%3D3000_k%3D2500.mat
+
 and put them in the same folder as fast-cryoEM-PCA
