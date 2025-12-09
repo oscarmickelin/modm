@@ -24,9 +24,7 @@ pip3 install "cvxpy[GUROBI]"
 
 6. Install fast-cryoEM-PCA by following the instructions at https://github.com/yunpeng-shi/fast-cryoEM-PCA
 
-7. Install (including obtaining a license file) gurobi using the instructions at https://support.gurobi.com/hc/en-us/articles/360044290292-How-do-I-install-Gurobi-for-Python
-
-8. Download the files:
+7. Download the files:
 
 >https://github.com/nmarshallf/fle_2d/blob/main/src/fle_2d/jn_zeros_n%3D3000_nt%3D2500.mat
 
