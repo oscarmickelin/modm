@@ -1,6 +1,6 @@
 # The method-of-double-moments for cryo-EM
 
-Code accompanying the paper https://arxiv.org/abs/2511.07438
+Code accompanying the paper "Two Datasets Are Better Than One: Method of Double Moments for 3-D Reconstruction in Cryo-EM", by Joe Kileel, Oscar Mickelin, Amit Singer, Sheng Xu. A preprint is available at https://arxiv.org/abs/2511.07438
 
 
 ## Installation
