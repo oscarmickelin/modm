@@ -39,7 +39,7 @@ import urllib.request
 def fetch_emdb(emdb_id):
 
     url = 'https://ftp.ebi.ac.uk/pub/databases/emdb/structures/EMD-'+str(emdb_id)+'/map/emd_'+str(emdb_id)+'.map.gz'
-    target_folder = str(emdb_id)
+    target_folder = 'structures/'+str(emdb_id)
     if not(os.path.isdir(target_folder)):
         os.makedirs(target_folder)
     else:
