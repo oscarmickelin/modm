@@ -807,54 +807,6 @@ def B_inplane_invariant(P,means,covs,pis, n_theta=50):
 
 
 
-def visualize_distr(B,npoints=100,filename='test'):
-    import matplotlib.pyplot as plt
-    from matplotlib import cm
-
-    P = len(B) - 1
-    fig = plt.figure()
-    ax = fig.add_subplot( 1, 1, 1, projection='3d')
-
-
-    u = np.linspace( 0, 2 * np.pi, npoints)
-    v = np.linspace( 1/100, np.pi - 1/100, npoints )
-
-    # create the sphere surface
-    XX = 1 * np.outer( np.cos( u ), np.sin( v ) )
-    YY = 1 * np.outer( np.sin( u ), np.sin( v ) )
-    ZZ = 1 * np.outer( np.ones( np.size( u ) ), np.cos( v ) )
-
-    WW = np.zeros(XX.shape, dtype=np.complex128)
-    inte = 0
-    for i in range( len( XX ) ):
-        for j in range( len( XX[0] ) ):
-            x = XX[ i, j ]
-            y = YY[ i, j ]
-            z = ZZ[ i, j ]
-            v3 = np.array([x,y,z]).reshape(3,)
-            R_matrix = R_inplane_invariant(v3)
-            R = Rotation.from_matrix(R_matrix)
-            R_angles = R.as_euler('zyz')
-            for p in range(P+1):
-                for up in range(2*p+1):
-                    tmp2 = (-1)**(up-p)*np.sqrt(4*np.pi/(2*p+1))*np.conj(spl.sph_harm(up-p, p, R_angles[2], R_angles[1]))
-                    WW[ i, j ] +=  B[p][up,p]*tmp2
-                inte += WW[i,j]*np.sin(v[j])
-    myheatmap = np.real(WW)
-
-    myheatmap = myheatmap / np.max(np.abs(myheatmap.flatten()))
-
-    ax.plot_surface( XX, YY,  ZZ, cstride=1, rstride=1, facecolors=cm.YlGnBu( myheatmap ) )
-
-    plt.axis('off')
-    ax.set_aspect('equal', adjustable='box')
-    plt.savefig(filename+"P"+str(P)+".png", bbox_inches='tight')
-
-    return myheatmap
-
-
-
-
 def B_norm(B):
     L = len(B)
     res = [0 for i in range(L)] 
